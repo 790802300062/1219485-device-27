@@ -9,7 +9,13 @@
             <a class="header-logo" href="index.html">
                 <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
             </a>
-<!--Форма поиска-->
+
+            <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </form>
+            <button class="header-search-btn" type="submit">Найти</button>
+
             <ul class="header-user-list">
                 <li class="header-user-item">
                     <a class="header-user-item-enter" href="#">Валентин Петухов</a>
@@ -83,23 +89,23 @@
                             <legend class="filter-form-legend">Цвет</legend>
                             <ul class="filter-form-checkbox-list">
                                 <li class="filter-form-checkbox-item">
-                                    <input class="filter-form-checkbox" type="checkbox" name="color" id="black" checked>
+                                    <input class="filter-form-checkbox" type="checkbox" name="black" id="black" checked>
                                     <label class="filter-form-label" for="black">Черный</label>
                                 </li>
                                 <li class="filter-form-checkbox-item">
-                                    <input class="filter-form-checkbox" type="checkbox" name="color" id="white">
+                                    <input class="filter-form-checkbox" type="checkbox" name="white" id="white">
                                     <label class="filter-form-label" for="white">Белый</label>
                                 </li>
                                 <li class="filter-form-checkbox-item">
-                                    <input class="filter-form-checkbox" type="checkbox" name="color" id="blue" checked>
+                                    <input class="filter-form-checkbox" type="checkbox" name="blue" id="blue" checked>
                                     <label class="filter-form-label" for="blue">Синий</label>
                                 </li>
                                 <li class="filter-form-checkbox-item">
-                                    <input class="filter-form-checkbox" type="checkbox" name="color" id="red" checked>
+                                    <input class="filter-form-checkbox" type="checkbox" name="red" id="red" checked>
                                     <label class="filter-form-label" for="red">Красный</label>
                                 </li>
                                 <li class="filter-form-checkbox-item">
-                                    <input class="filter-form-checkbox" type="checkbox" name="color" id="pink">
+                                    <input class="filter-form-checkbox" type="checkbox" name="pink" id="pink">
                                     <label class="filter-form-label" for="pink">Розовый</label>
                                 </li>
                             </ul>
@@ -113,7 +119,7 @@
                                 </li>
                                 <li class="filter-form-radio-item">
                                     <input class="filter-form-radio" type="radio" name="Bluetooth" id="no">
-                                    <label class="filter-form-label" for="yes">Нет</label>
+                                    <label class="filter-form-label" for="no">Нет</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -142,28 +148,28 @@
                         <li class="catalog-item">
                             <article class="catalog-item-desc">
                                 <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                                <a href=""><h3 class="catalog-item-desc-title">Любительская селфи-палка</h3></a>
+                                <a href="#"><h3 class="catalog-item-desc-title">Любительская селфи-палка</h3></a>
                                 <span class="catalog-item-desc-price">500 руб.</span>
                             </article>
                         </li>
                         <li class="catalog-item">
                             <article class="product-description-item">
                                 <img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                                <a href=""><h3 class="catalog-item-desc-title">Профессиональная селфи-палка</h3></a>
+                                <a href="#"><h3 class="catalog-item-desc-title">Профессиональная селфи-палка</h3></a>
                                 <span class="catalog-item-desc-price">1 500 руб.</span>
                             </article>
                         </li>
                         <li class="catalog-item">
                             <article class="product-description-item">
                                 <img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                                <a href=""><h3 class="catalog-item-desc-title">Непотопляемая селфи-палка</h3></a>
+                                <a href="#"><h3 class="catalog-item-desc-title">Непотопляемая селфи-палка</h3></a>
                                 <span class="catalog-item-desc-price">2 500 руб.</span>
                             </article>
                         </li>
                         <li class="catalog-item">
                             <article class="product-description-item">
                                 <img src="img/followme-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-                                <a href=""><h3 class="catalog-item-desc-title">Селфи-палка &laquo;Следуй за мной&raquo;</h3></a>
+                                <a href="#"><h3 class="catalog-item-desc-title">Селфи-палка &laquo;Следуй за мной&raquo;</h3></a>
                                 <span class="catalog-item-desc-price">4 900 руб.</span>
                                 <span class="catalog-item-desc-new">NEW</span>
                             </article>
@@ -204,16 +210,16 @@
             <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             <ul class="footer-socials-list">
                 <li class="footer-socials-item">
-                    <a class="footer-socials-item-fb" href="#">Facebook</a>
+                    <a class="footer-socials-item-fb" href="#" aria-label="Facebook"></a>
                 </li>
                 <li class="footer-socials-item">
-                    <a class="footer-socials-item-insta" href="#">Instagram</a>
+                    <a class="footer-socials-item-insta" href="#" aria-label="Instagram"></a>
                 </li>
                 <li class="footer-socials-item">
-                    <a class="footer-socials-item-twitter" href="#">Twitter</a>
+                    <a class="footer-socials-item-twitter" href="#" aria-label="Twitter"></a>
                 </li>
             </ul>
-            <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+            <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy"></a>
         </footer>
   </body>
 </html>
