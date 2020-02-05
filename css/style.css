@@ -32,17 +32,26 @@
 
 body {
     margin: 0;
+	padding: 0;
 	font-family: "OpenSans", "Arial", sans-serif;
 	font-weight: 400;
+	font-size: 16px;
 	letter-spacing: 0.15px;
-	}
+	background-color: white;
+}
 
 a {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
-	}
+}
 
-.visually-hidden  {
+img {
+    max-width: 100%;
+	height: auto;
+}
+
+
+.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -53,21 +62,20 @@ a {
 	overflow: hidden;
 }
 
-input[placeholder] {
+.header-search-input {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 24px;
 	color: black;
 	opacity: 0.3;
-	}
+	border: none;
+}
 
-input[placeholder]:hover {
-	color: black;
+.header-search-input:hover {
 	opacity: 0.6;
 }
 
-input[placeholder]:focus {
-	color: black;
+.header-search-input:focus {
 	opacity: 1;
 }
 
@@ -80,7 +88,7 @@ input[placeholder]:focus {
 	color: transparent;
 	background-color: transparent;
 	border: none;
-	}
+}
 
 .header-search-btn:hover {
 	color: white;
