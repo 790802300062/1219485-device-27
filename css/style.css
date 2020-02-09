@@ -1,37 +1,37 @@
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-style: normal;
-    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-         url("../fonts/gilroyextrabold.woff") format("woff");
+	font-family: "Gilroy";
+	font-weight: 800;
+	font-style: normal;
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+	     url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 300;
-    font-style: normal;
-    src: url("../fonts/gilroylight.woff2") format("woff2"),
-         url("../fonts/gilroylight.woff") format("woff");
+	font-family: "Gilroy";
+	font-weight: 300;
+	font-style: normal;
+	src: url("../fonts/gilroylight.woff2") format("woff2"),
+		 url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-    font-family: "OpenSans";
-    font-weight: 400;
-    font-style: normal;
-    src: url("../fonts/opensans.woff2") format("woff2"),
-         url("../fonts/opensans.woff") format("woff");
+	font-family: "OpenSans";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/opensans.woff2") format("woff2"),
+		 url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-    font-family: "OpenSans";
-    font-weight: 300;
-    font-style: normal;
-    src: url("../fonts/opensanslight.woff2") format("woff2"),
-         url("../fonts/opensanslight.woff") format("woff");
+	font-family: "OpenSans";
+	font-weight: 300;
+	font-style: normal;
+	src: url("../fonts/opensanslight.woff2") format("woff2"),
+		 url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
-    margin: 0;
+	margin: 0;
 	padding: 0;
 	font-family: "OpenSans", "Arial", sans-serif;
 	font-weight: 400;
@@ -46,7 +46,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -60,6 +60,34 @@ img {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
+	min-height: 340px;
+	margin: auto;
+	background-color: lightblue;
+}
+
+.header-logo {
+	display: flex;
+	margin-top: 21px;
+	margin-left: 60px;
+}
+
+.header-first-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: lightcoral;
+}
+
+.header-search {
+	display: flex;
+	margin-left: 60px;
+	background-color: lightcyan;
 }
 
 .header-search-input {
@@ -114,9 +142,39 @@ img {
 }
 
 .header-user-list {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 560;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	font-weight: 300;
 	color: black;
+	background-color: lightgoldenrodyellow;
+}
+
+.header-user-item {
+	display: flex;
+	flex-direction: row;
+}
+
+.header-user-item:first-child {
+	display: flex;
+	flex-direction: row;
+	width: 287px;
+}
+
+.header-user-item:last-child {
+	display: flex;
+	flex-direction: row;
+	width: 144px;
+}
+
+.header-user-item:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	width: 130px;
 }
 
 .header-user-item:hover {
@@ -129,13 +187,26 @@ img {
 	opacity: 0.3;
 }
 
+.header-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 60px;
+	background-color: lightgray;
+}
+
 .header-menu-list {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
+	text-transform: uppercase;
 }
 
 .header-menu-list a:hover {
@@ -146,6 +217,24 @@ img {
 	opacity: 0.3;
 }
 
+.header-menu-item:first-child:hover {
+	display: block;
+	position: relative;
+}
+
+.header-menu-submenu-list {
+	display: none;
+	margin: 0;
+	padding: 0;
+	text-transform: none;
+}
+
+.header-menu-item:first-child:hover .header-menu-submenu-list {
+	display: block;
+	position: absolute;
+	z-index: 2;
+}
+
 .header-menu-submenu-item {
 	list-style: none;
 	font-family: "OpenSans", "Arial", sans-serif;
@@ -153,6 +242,18 @@ img {
 	font-size: 15px;
 	line-height: 36px;
 	letter-spacing: 0.15px;
+}
+
+.header-menu-item:first-child {
+	margin-right: 294px;
+}
+
+.header-menu-item:nth-child(2) {
+	margin-right: 40px;
+}
+
+.header-menu-item:nth-child(3) {
+	margin-right: 115px;
 }
 
 .header-menu-submenu-item a:hover {
@@ -261,6 +362,24 @@ img {
 	list-style: none;
 }
 
+.about-contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1160px;
+	min-height: 657px;
+	margin: auto;
+	background-color: lightgreen;
+}
+
+.about,
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: lightpink;
+}
+
 .about h2,
 .contacts h2 {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -285,10 +404,76 @@ img {
 	line-height: 40px;
 }
 
+.footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #464646;
+}
+
+.footer-center {
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
+	margin: auto;
+	background-color: blue;
+}
+
+.footer-first-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-user-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-user-item:nth-child(2) {
+	margin-right: 44px;
+}
+
+.footer-user-item:first-child {
+	margin-right: 44px;
+}
+
+.footer-second-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-services-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-services-item:first-child {
+	margin-right: 38px;
+}
+
+.footer-services-item:nth-child(2) {
+	margin-right: 38px;
+}
+
+.footer-third-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-socials-list {
+	display: flex;
+	flex-direction: row;
+}
+
 .footer-user-item {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-	
+
 .footer-user-item a {
 	font-weight: 300;
 	font-size: 15px;
@@ -347,12 +532,27 @@ color: rgba(255, 255, 255, 0.3);
 	 opacity: 0.3;
 }
 
+.catalog-headline {
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
+	margin: auto;
+	background-color: blueviolet;
+}
+
 .headline {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0,15px;
+}
+
+.breadcrumbs-list {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
 }
 
 .breadcrumbs-item {
@@ -374,16 +574,58 @@ color: rgba(255, 255, 255, 0.3);
 	color: rgba(0, 0, 0, 0.1);
 }
 
+.catalog-main-flex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.filter-flex {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	align-items: flex-end;
+	background-color: lightcyan;
+}
+
+.sort-flex {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2.536;
+	background-color: lightgoldenrodyellow;
+}
+
 .filter-sort {
+	display: flex;
+	width: 200px;
+	min-height: 70px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	background-color: lightsalmon;
+}
+
+.filter-sign {
+	justify-content: flex-end;
+}
+
+.sort {
+	display: flex;
+}
+
+.filter-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .filter-form-fieldset {
+	display: flex;
+	width: 200px;
+	align-items: flex-start;
 	border: none;
 }
 
@@ -403,6 +645,24 @@ color: rgba(255, 255, 255, 0.3);
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
+}
+
+.btn.no-button {
+	width: 200px;
+}
+
+.sort-type-list {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+.sort-direction-list {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
 }
 
 .sort-type-item,
@@ -444,8 +704,51 @@ color: rgba(255, 255, 255, 0.3);
 	opacity: 1;
 }
 
+.catalog-wrapper {
+	width: 832px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.catalog-list {
+	display: flex;
+	flex-direction: row;
+	width: 832px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: lime;
+}
+
+.catalog-item-desc {
+	display: flex;
+	flex-direction: row;
+	width: 360px;
+	min-height: 465px;
+	flex-wrap: wrap;
+}
+
+.catalog-item-desc-title {
+	width: 260px;
+	background-color: mediumaquamarine;
+}
+
+.catalog-item-desc-price {
+	width: 100px;
+	background-color: mediumorchid;
+}
+
 .catalog-item {
 	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .catalog-item-desc-title {
@@ -471,6 +774,11 @@ color: rgba(255, 255, 255, 0.3);
 	line-height: 24px;
 	letter-spacing: 0.7px;
 	color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list {
+	display: flex;
+	flex-direction: row;
 }
 
 .pagination-item {
