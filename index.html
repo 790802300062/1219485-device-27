@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Девайс</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header class="header container">
-                <a class="header-logo">
-                    <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
-                </a>
-                <div class="header-first-line">
-                    <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="search">Поиск</label>
-                        <input class="header-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-                        <button class="header-search-btn" type="submit">Найти</button>
-                    </form>
-
-                    <ul class="header-user-list">
-                        <li class="header-user-item link-enter">
-                            <a class="header-user-item-enter" href="#">Войти</a>
-                        </li>
-                        <li class="header-user-item link-compare">
-                            <a class="header-user-item-compare" href="#">Сравнить</a>
-                        </li>
-                        <li class="header-user-item link-cart">
-                            <a class="header-user-item-cart" href="#">Корзина</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <nav class="header-menu">
-                    <ul class="header-menu-list">
-                        <li class="header-menu-item header-menu-catalog">
-                            <a href="#">Каталог товаров</a>
-                            <ul class="header-menu-submenu-list">
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Виртуальная реальность</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="catalog.html">Моноподы для селфи</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Экшн-камеры</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Фитнес-браслеты</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Умные часы</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Квадрокоптеры</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-menu-item header-menu-delivery">
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li class="header-menu-item header-menu-warranty">
-                            <a href="#">Гарантия</a>
-                        </li>
-                        <li class="header-menu-item">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE></h1>
+      <a class="header-logo">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+      </a>
+      <nav class="header-menu">
+        <ul class="header-user-list">
+          <li class="header-user-item link-search">
+            <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+                <label class="header-search-label" for="search"><span class="visually-hidden">Поиск</span></label>
+                <input class="header-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+                <button class="header-search-btn" type="submit">Найти</button>
+            </form>
+          </li>
+          <li class="header-user-item link-enter">
+            <a class="header-user-item-enter" href="#">Войти</a>
+          </li>
+          <li class="header-user-item link-compare">
+            <a class="header-user-item-compare" href="#">Сравнить</a>
+          </li>
+          <li class="header-user-item link-cart">
+            <a class="header-user-item-cart" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="header-menu-list">
+          <li class="header-menu-item header-menu-catalog">
+            <a class="header-menu-catalog-link" href="#">Каталог товаров</a>
+               <div class="catalog-wrapper container">
+               <ul class="header-menu-submenu-list">
+                  <li class="header-menu-submenu-item first-column">
+                    <a href="#">Виртуальная реальность</a>
+                    <a href="catalog.html">Моноподы для селфи</a>
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                  <li class="header-menu-submenu-item">
+                    <a href="#">Фитнес-браслеты</a>
+                    <a href="#">Умные часы</a>
+                  </li>
+                  <li class="header-menu-submenu-item">
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+               </div>
+          </li>
+          <li class="header-menu-item header-menu-delivery">
+            <a class="header-menu-delivery-link" href="#">Доставка</a>
+          </li>
+          <li class="header-menu-item header-menu-warranty">
+            <a class="header-menu-warranty-link" href="#">Гарантия</a>
+          </li>
+          <li class="header-menu-item header-menu-contacts">
+            <a class="header-menu-contacts-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
         
         <main>
             <h1 class="visually-hidden">Интернет магазин гаджетов</h1>
