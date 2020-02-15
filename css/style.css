@@ -57,10 +57,10 @@ img {
   
   width: 1px;
   height: 1px;
- 
   margin: -1px;
-  border: 0;
   padding: 0;
+
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -72,9 +72,7 @@ img {
 
 .header {
   position: relative;
-
-  height: 186px;
-
+  min-height: 186px;
   margin-top: 40px;
 
   color: #000000;
@@ -115,23 +113,21 @@ img {
 }
 
 .header-search {
-  display: block;
-
   position: relative;
+
+  display: block;
 }
 
 .header-search-input {
   position: absolute;
-  
   width: 356px;
+  top: 42px;
+  left: 20px;
 
   padding-left: 36px;
   padding-bottom: 7px;
   margin-left: 3px;
-  
-  top: 42px;
-  left: 20px;
-  
+
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -147,13 +143,12 @@ img {
 .header-search-label::before {
   content: "";
   position: absolute;
+  top: 51px;
+  left: 23px;
 
   width: 18px;
   height: 16px;
 
-  top: 51px;
-  left: 23px;
-  
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
 
@@ -256,12 +251,11 @@ img {
 
 .header-search-btn {
   position: absolute;
-
   left: 375px;
   top: 33px;
 
   width: 85px;
-  height: 50px;
+  min-height: 50px;
 
   color: #000000;
   background-color: transparent;
@@ -306,13 +300,11 @@ img {
 
 .link-enter {
   width: 285px;
-
   margin-top: 50px;
 }
 
 .header-user-item-enter {
   position: relative;
-
   padding-left: 27px;
   margin-left: 20px;
 }
@@ -320,12 +312,11 @@ img {
 .header-user-item-enter::before {
   content: "";
   position: absolute;
+  top: 4px;
+  left: 0px;
 
   width: 13px;
   height: 12px;
-
-  top: 4px;
-  left: 0px;
 
   background-image: url(../img/enter.svg);
   background-repeat: no-repeat;
@@ -335,13 +326,11 @@ img {
 
 .link-compare {
   width: 130px;
-
   margin-top: 50px;
 }
 
 .header-user-item-compare {
   position: relative;
-
   padding-left: 20px;
   margin-left: 22px;
 }
@@ -349,22 +338,20 @@ img {
 .header-user-item-compare::before {
   content: "";
   position: absolute;
-  
-  width: 15px;
-  height: 15px;
-  
   top: 6px;
   left: 0px;
-  
+
+  width: 15px;
+  height: 15px;
+
   background-image: url(../img/compare.svg);
   background-repeat: no-repeat;
-  
+
   cursor: pointer;
 }
 
 .link-cart {
   width: 143px;
-
   margin-top: 50px;
 }
 
@@ -378,12 +365,11 @@ img {
 .header-user-item-cart::before {
   content: "";
   position: absolute;
+  top: 4px;
+  left: 1px;
 
   width: 12px;
   height: 12px;
-
-  top: 4px;
-  left: 1px;
 
   background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
@@ -423,7 +409,6 @@ img {
 
 .header-menu-catalog {
   width: 526px;
-
   margin-top: 30px;
   margin-left: 60px;
 }
@@ -437,12 +422,11 @@ img {
 .header-menu-catalog-link::after {
   content: "";
   position: absolute;
+  top: 3px;
+  left: 231px;
 
   width: 18px;
   height: 18px;
-
-  top: 3px;
-  left: 231px;
 
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
@@ -452,13 +436,11 @@ img {
 }
 
 .catalog-wrapper {
-  display: none;
-
   position: absolute;
-
-  height: 163px;
-
   left: 0px;
+
+  display: none;
+  min-height: 163px;
 
   background-color: #f7e296;
 }
@@ -487,7 +469,6 @@ img {
   flex-direction: column;
 
   width: 200px;
-
   margin-left: 0px;
   padding: 0;
 
@@ -515,7 +496,6 @@ img {
 
 .header-menu-delivery{
   width: 169px;
-
   margin-top: 30px;
 }
 
@@ -535,7 +515,6 @@ img {
 
 .header-menu-contacts {
   width: 175px;
-
   margin-top: 30px;
 }
 
@@ -555,50 +534,167 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*
+.slider-list {
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
+}
 
+.promo-slider-one {
+  position: relative;
 
-.slider-item {
-	list-style: none;
-	font-family: "Gilroy", "Arial", sans-serif;
-	letter-spacing: 0.15px;
-	font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.promo-slider-one::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  min-height: 113px;
+
+  background-color: #f7e296;
+  z-index: -5;
+}
+
+.promo-slider-left,
+.promo-slider-right {
+  width: 560px;
+}
+
+.promo-slider-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-slider-right {
+  position: relative;
 }
 
 .slider-item-number {
-	font-size: 179px;
-	line-height: 179px;
-	color: white;
+  position: absolute;
+  top: -13px;
+  left: 330px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+
+  color: #ffffff;
+}
+
+.slider-item-number::before {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: -330px;
+
+  width: 100px;
+  height: 8px;
+
+  background-color: #ffffff;
 }
 
 .slider-item-promo {
-	font-size: 47px;
-	line-height: 56px;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+  font-weight: 800;
 }
 
 .slider-item-desc {
-	font-family: "OpenSans", "Arial", sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 30px;
-	color: #464646;
+  padding-top: 2px;
+  
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.slider-item-table {
+  margin: 0;
+  padding-top: 115px;
 }
 
 .slider-item-table-value td {
-	font-weight: 300;
-	font-size: 36px;
-	line-height: 48px;
+  width: 160px;
+  
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.slider-item-table-value td:nth-child(2) {
+  width: 140px;
 }
 
 .slider-item-table-desc th {
-	font-family: "OpenSans", "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 20px;
-	color: #464646;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
 }
 
+.promo-btn {
+  position: relative;
+
+  display: inline-block;
+  padding-top: 30px;
+  
+  width: 220px;
+
+  text-align: center;
+  font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.promo-btn::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0px;
+
+  width: 220px;
+  height: 8px;
+
+  background-color: #f0c52e;
+
+  z-index: -5;
+}
+
+.promo-btn:hover::before {
+  top:20px;
+  height: 40px;
+
+  transition: all linear;
+
+}
+
+.promo-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
 .btn {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
