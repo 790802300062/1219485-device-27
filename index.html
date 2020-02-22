@@ -95,7 +95,7 @@
                         </div>
                         <div class="promo-slider-right">
                             <span class="slider-item-number">01</span>
-                            <h3 class="slider-item-promo"><b>Делай селфи,<br>как Бен Стиллер!</b></h3>
+                            <h3 class="slider-item-promo">Делай селфи,<br>как Бен Стиллер!</h3>
                             <p class="slider-item-desc">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                             <a class="promo-btn" href="#">Подробнее</a>
                             <table class="slider-item-table">
@@ -154,11 +154,11 @@
                             </table>
                         </div>
                     </div>
-                    <div class="header-slider-controls">
-                        <label for="product-1"></label>
-                        <label for="product-2"></label>
-                        <label for="product-3"></label>
-                    </div>
+                    <ul class="header-slider-controls-list">
+                        <li><label for="product-1"></label></li>
+                        <li><label for="product-2"></label></li>
+                        <li><label for="product-3"></label></li>
+                    </ul>
                 </div>
             </section>
 
@@ -216,19 +216,19 @@
                 </ul>
             </section>
 
-            <section class="services">
+            <section class="services gradient">
                 <div class="container">
                     <div class="services-wrap">
-                       <h2 class="visually-hidden">Сервисы, оказываемые интернет магазином</h2>
+                        <h2 class="visually-hidden">Сервисы, оказываемые интернет магазином</h2>
                         <input class="services-slider visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
                         <input class="services-slider visually-hidden" id="services-control-2" type="radio" name="services-control">
                         <input class="services-slider visually-hidden" id="services-control-3" type="radio" name="services-control">
-                
-                        <div class="services-slider-controls">
-                            <label class="services-slider-controls-label" for="services-control-1">Доставка</label>
-                            <label class="services-slider-controls-label" for="services-control-2">Гарантия</label>
-                            <label class="services-slider-controls-label" for="services-control-3">Кредит</label>
-                        </div>
+
+                        <ul class="services-slider-controls-list">
+                            <li><label class="services-slider-controls-label" for="services-control-1">Доставка</label></li>
+                            <li><label class="services-slider-controls-label" for="services-control-2">Гарантия</label></li>
+                            <li><label class="services-slider-controls-label" for="services-control-3">Кредит</label></li>
+                        </ul>
                         <div class="services-slider-item services-slider-delivery">
                             <h3 class="service-item-title">Доставка</h3>
                             <p class="service-item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -241,8 +241,6 @@
                             <h3 class="service-item-title">Кредит</h3>
                             <p class="service-item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                         </div>
-                    
-                        
                     </div>
                 </div>
             </section>
@@ -251,23 +249,31 @@
                 <h2 class="visually-hidden">Популярные бренды</h2>
                 <ul class="brands-list">
                     <li class="brands-item">
-                        <img src="img/dji.jpg" width="260" height="100" alt="DJI">
+                        <a class="brands-link brands-link-dji" href="#">
+                            <span class="visually-hidden">DJI</span>
+                        </a>
                     </li>
                     <li class="brands-item">
-                        <img src="img/spgadgets.jpg" width="260" height="100" alt="SPGadgets">
+                        <a class="brands-link brands-link-spgadgets" href="#">
+                            <span class="visually-hidden">SPGadgets</span>
+                        </a>
                     </li>
                     <li class="brands-item">
-                        <img src="img/gopro.jpg" width="260" height="100" alt="GoPro">
+                        <a class="brands-link brands-link-gopro" href="#">
+                            <span class="visually-hidden">GoPro</span>
+                        </a>
                     </li>
                     <li class="brands-item">
-                        <img src="img/vive.jpg" width="260" height="100" alt="VIVE">
+                        <a class="brands-link brands-link-vive" href="#">
+                            <span class="visually-hidden">VIVE</span>
+                        </a>
                     </li>
                 </ul>
             </section>
 
             <div class="about-contacts container">
                 <section class="about">
-                    <h2>О нас</h2>
+                    <h2 class="about-title">О нас</h2>
                     <p class="about-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p class="about-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                     <ul class="about-delivery-list">
@@ -279,7 +285,7 @@
                 </section>
 
                 <section class="contacts">
-                    <h2>Контакты</h2>
+                    <h2 class="about-title">Контакты</h2>
                     <p class="contacts-p">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img src="img/map.jpg" width="560" height="222" alt="ул.Строителей, 15">
                     <a class="btn" href="#">Напишите нам</a>
@@ -288,16 +294,18 @@
         </main>
         
         <footer class="footer">
-            <div class="footer-center container"></div>
+            <div class="footer-center container">
                 <div class="footer-first-line">
                     <a class="footer-logo" href="#">
-                        <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36">
+                            <path fill-rule="evenodd" fill="#FFC600" d="M163.168 27.294v7.393h-21.122V1.084h20.882v7.392h-13.201v5.569h12.001v7.297h-12.001v5.952h13.441zm-39.6.576c3.408 0 6.336-1.536 7.776-4.128l6.625 3.84c-2.88 4.752-8.257 7.777-14.401 7.777-10.129 0-17.474-7.585-17.474-17.474S113.439.412 123.568.412c6.096 0 11.473 3.024 14.401 7.776l-6.625 3.841c-1.488-2.592-4.368-4.129-7.776-4.129-5.953 0-9.793 3.985-9.793 9.985 0 6.001 3.84 9.985 9.793 9.985zM93.614 1.084h7.681v33.603h-7.681V1.084zM69.52 34.687L58.575 1.084h8.4l7.441 24.722 7.441-24.722h8.4L79.312 34.687H69.52zM35.535 1.084h20.882v7.392H43.216v5.569h12.001v7.297H43.216v5.952h13.441v7.393H35.535V1.084zM14.417 34.687H.975V1.084h13.442c9.264 0 16.321 7.296 16.321 16.801 0 9.505-7.057 16.802-16.321 16.802zm0-26.211H8.656v18.818h5.761c5.28 0 8.928-3.648 8.928-9.409 0-5.76-3.648-9.409-8.928-9.409z"/>
+                        </svg>
                     </a>
                     <ul class="footer-user-list">
-                        <li class="footer-user-item footer-login">
+                        <li class="footer-user-item">
                             <a class="footer-user-item-login" href="#">Войти</a>
                         </li>
-                        <li class="footer-user-item footer-compare">
+                        <li class="footer-user-item">
                             <a class="footer-user-item-compare" href="#">Сравнить</a>
                         </li>
                         <li class="footer-user-item">
@@ -311,7 +319,7 @@
                         <li class="footer-services-item">
                             <a href="#">Доставка</a>
                         </li>
-                        <li class="footer-services-item footer-services-link">
+                        <li class="footer-services-item">
                             <a href="#">Гарантия</a>
                         </li>
                         <li class="footer-services-item">
