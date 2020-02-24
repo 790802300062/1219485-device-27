@@ -88,8 +88,8 @@
                 <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
                 <input class="visually-hidden" type="radio" id="product-2" name="toggle">
                 <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-                <div class="slider-list">
-                    <div class="slider-item" id="slide-1">
+                <ul class="slider-list">
+                    <li class="slider-item" id="slide-1">
                         <div class="promo-slider-left">
                             <img src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
                         </div>
@@ -111,9 +111,9 @@
                                 </tr>
                             </table>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="slider-item" id="slide-2">
+                    <li class="slider-item" id="slide-2">
                         <div class="promo-slider-left">
                             <img src="img/slide-2.png" width="345" height="485" alt="Мотивирующие фитнес браслеты">
                         </div>
@@ -131,9 +131,9 @@
                                 </tr>
                             </table>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="slider-item" id="slide-3">
+                    <li class="slider-item" id="slide-3">
                         <div class="promo-slider-left">
                             <img src="img/slide-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
                         </div>
@@ -153,13 +153,15 @@
                                 </tr>
                             </table>
                         </div>
-                    </div>
-                    <ul class="header-slider-controls-list">
-                        <li><label for="product-1"></label></li>
-                        <li><label for="product-2"></label></li>
-                        <li><label for="product-3"></label></li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="header-slider-controls-list">
+                        <ul>
+                            <li><label for="product-1"></label></li>
+                            <li><label for="product-2"></label></li>
+                            <li><label for="product-3"></label></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
 
             <section class="category container">
@@ -217,32 +219,31 @@
             </section>
 
             <section class="services gradient">
-                <div class="container">
-                    <div class="services-wrap">
+                    <div class="services-wrap container">
                         <h2 class="visually-hidden">Сервисы, оказываемые интернет магазином</h2>
                         <input class="services-slider visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
                         <input class="services-slider visually-hidden" id="services-control-2" type="radio" name="services-control">
                         <input class="services-slider visually-hidden" id="services-control-3" type="radio" name="services-control">
-
                         <ul class="services-slider-controls-list">
                             <li><label class="services-slider-controls-label" for="services-control-1">Доставка</label></li>
                             <li><label class="services-slider-controls-label" for="services-control-2">Гарантия</label></li>
                             <li><label class="services-slider-controls-label" for="services-control-3">Кредит</label></li>
                         </ul>
-                        <div class="services-slider-item services-slider-delivery">
-                            <h3 class="service-item-title">Доставка</h3>
-                            <p class="service-item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                        </div>
-                        <div class="service-slider-item services-slider-warranty">
-                            <h3 class="service-item-title">Гарантия</h3>
-                            <p class="service-item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                        </div>
-                        <div class="service-slider-item services-slider-credit">
-                            <h3 class="service-item-title">Кредит</h3>
-                            <p class="service-item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                        </div>
+                        <ul class="services-slider-list">
+                            <li class="services-slider-item services-slider-delivery">
+                                <h3 class="service-item-title">Доставка</h3>
+                                <p class="service-item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                            </li>
+                            <li class="services-slider-item services-slider-warranty">
+                                <h3 class="service-item-title">Гарантия</h3>
+                                <p class="service-item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                            </li>
+                            <li class="services-slider-item services-slider-credit">
+                                <h3 class="service-item-title">Кредит</h3>
+                                <p class="service-item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                            </li>
+                        </ul>
                     </div>
-                </div>
             </section>
 
             <section class="brands container">
@@ -297,9 +298,7 @@
             <div class="footer-center container">
                 <div class="footer-first-line">
                     <a class="footer-logo" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36">
-                            <path fill-rule="evenodd" fill="#FFC600" d="M163.168 27.294v7.393h-21.122V1.084h20.882v7.392h-13.201v5.569h12.001v7.297h-12.001v5.952h13.441zm-39.6.576c3.408 0 6.336-1.536 7.776-4.128l6.625 3.84c-2.88 4.752-8.257 7.777-14.401 7.777-10.129 0-17.474-7.585-17.474-17.474S113.439.412 123.568.412c6.096 0 11.473 3.024 14.401 7.776l-6.625 3.841c-1.488-2.592-4.368-4.129-7.776-4.129-5.953 0-9.793 3.985-9.793 9.985 0 6.001 3.84 9.985 9.793 9.985zM93.614 1.084h7.681v33.603h-7.681V1.084zM69.52 34.687L58.575 1.084h8.4l7.441 24.722 7.441-24.722h8.4L79.312 34.687H69.52zM35.535 1.084h20.882v7.392H43.216v5.569h12.001v7.297H43.216v5.952h13.441v7.393H35.535V1.084zM14.417 34.687H.975V1.084h13.442c9.264 0 16.321 7.296 16.321 16.801 0 9.505-7.057 16.802-16.321 16.802zm0-26.211H8.656v18.818h5.761c5.28 0 8.928-3.648 8.928-9.409 0-5.76-3.648-9.409-8.928-9.409z"/>
-                        </svg>
+                        <img src="img/logo-yellow.png" width="163" height="35" alt="Логотип интернет-магазина Device">
                     </a>
                     <ul class="footer-user-list">
                         <li class="footer-user-item">
@@ -347,10 +346,11 @@
 
         <section class="popup-contact">
             <h2 class="visually-hidden">Форма обратной связи</h2>
+            <div class="popup-window">
             <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="popup-form-field">
                     <label class="popup-form-label" for="user-name">Ваше имя</label>
-                    <input class="popup-form-input" type="text" name="user-name" id="user-name" placeholder="Ваше имя:" required>
+                    <input class="popup-form-input" type="text" name="user-name" id="user-name" pattern="^[A-Za-zА-Яа-яЁё]+$" placeholder="Ваше имя:" required>
                 </p>
                 <p class="popup-form-field">
                     <label class="popup-form-label" for="user-email">Ваш e-mail:</label>
@@ -363,6 +363,7 @@
                 <button class="btn" type="submit">Отправить</button>
             </form>
             <button class="btn-close" type="button" aria-label="Кнопка закрытия окна"></button>
+            </div>
         </section>
 
         <section class="popup-map">
