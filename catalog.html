@@ -8,70 +8,81 @@
     </head>
     <body>
         <header class="header container">
-                <a class="header-logo" href="index.html">
-                    <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
-                </a>
-                <div class="header-first-line">
-                    <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="search">Поиск</label>
-                        <input class="header-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-                        <button class="header-search-btn" type="submit">Найти</button>
-                    </form>
+            <a class="header-logo" href="index.html">
+                <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+            </a>
+            <nav class="header-menu">
+                <ul class="header-user-list">
+                    <li class="header-user-item link-search">
+                        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+                            <label class="header-search-label" for="search"><span class="visually-hidden">Поиск</span></label>
+                            <input class="header-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+                            <button class="header-search-btn" type="submit">Найти</button>
+                        </form>
+                    </li>
+                    <li class="header-user-item link-user">
+                        <a class="header-user-item-user" href="#">Валентин Петухов</a>
+                        <button class="header-user-item-button" type="submit">Выйти</button>
+                    </li>
+                    <li class="header-user-item link-compare">
+                        <a class="header-user-item-compare" href="#">Сравнить</a>
+                    </li>
+                    <li class="header-user-item link-cart">
+                        <a class="header-user-item-cart" href="#">Корзина</a>
+                    </li>
+                </ul>
 
-                    <ul class="header-user-list">
-                        <li class="header-user-item link-enter">
-                            <a class="header-user-item-enter" href="#">Валентин Петухов</a>
-                            <button class="header-user-item-button" type="submit">Выйти</button>
-                        </li>
-                        <li class="header-user-item link-compare">
-                            <a class="header-user-item-compare" href="#">Сравнить</a>
-                        </li>
-                        <li class="header-user-item link-cart">
-                            <a class="header-user-login-cart" href="#">Корзина</a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <nav class="header-menu">
-                    <ul class="header-menu-list">
-                        <li class="header-menu-item header-menu-catalog">
-                            <a href="#">Каталог товаров</a>
-                            <ul class="header-menu-submenu-list">
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Виртуальная реальность</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="catalog.html">Моноподы для селфи</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Экшн-камеры</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Фитнес-браслеты</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Умные часы</a>
-                                </li>
-                                <li class="header-menu-submenu-item">
-                                    <a href="#">Квадрокоптеры</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-menu-item header-menu-delivery">
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li class="header-menu-item header-menu-warranty">
-                            <a href="#">Гарантия</a>
-                        </li>
-                        <li class="header-menu-item">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a class="header-menu-catalog-link" href="#">Каталог товаров</a>
+                        <ul class="header-submenu">
+                            <li class="first-column">
+                                <ul class="header-submenu-list">
+                                    <li class="header-submenu-item">
+                                        <a href="#">Виртуальная реальность</a>
+                                    </li>
+                                    <li class="header-submenu-item">
+                                        <a href="catalog.html">Моноподы для селфи</a>
+                                    </li>
+                                    <li class="header-submenu-item">
+                                        <a href="#">Экшн-камеры</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="second-column">
+                                <ul class="header-submenu-list">
+                                    <li class="header-submenu-item">
+                                        <a href="#">Фитнес-браслеты</a>
+                                    </li>
+                                    <li class="header-submenu-item">
+                                        <a href="#">Умные часы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="third-column">
+                                <ul class="header-submenu-list">
+                                    <li class="header-submenu-item">
+                                        <a href="#">Квадрокоптеры</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-delivery-link" href="#">Доставка</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-warranty-link" href="#">Гарантия</a>
+                    </li>
+                    <li class="header-menu-item header-menu-contacts">
+                        <a class="header-menu-contacts-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
-            <div class="catalog-headline">
+            <div class="catalog-headline container">
                 <h1 class="headline">Моноподы для селфи</h1>
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
@@ -81,10 +92,49 @@
                         <a href="#">Каталог товаров</a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <a href="catalog.html">Моноподы для селфи</a>
+                        <a>Моноподы для селфи</a>
                     </li>
                 </ul>
             </div>
+
+            <div class="catalog-main-wrapper">
+                <div class="filter-flex">
+                    <div class="filter-header">
+                        <h2 class="filter-sort filter-sign">Фильтр:</h2>
+                    </div>
+                </div>
+                <div class="catalog-flex">
+                    <div class="sort-header">
+                        <h2 class="filter-sort sort-sign">Сортировка:</h2>
+                        <ul class="sort-type-list">
+                            <li class="sort-type-item">
+                                <a class="sort-type-link--active" href="#">По цене</a>
+                            </li>
+                            <li class="sort-type-item">
+                                <a class="sort-type-link" href="#">По типу</a>
+                            </li>
+                            <li class="sort-type-item">
+                                <a class="sort-type-link" href="#">По популярности</a>
+                            </li>
+                        </ul>
+                    
+                        <ul class="sort-direction-list">
+                            <li class="sort-direction-item">
+                                <a class="sort-direction-link--active" href="#">
+                                    <span class="visually-hidden">По возрастанию</span>
+                                </a>
+                            </li>
+                            <li class="sort-direction-item">
+                                <a class="sort-direction-link" href="#">
+                                    <span class="visually-hidden">По убыванию</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
 
             <div class="catalog-main-flex">
                 <div class="filter-flex">
