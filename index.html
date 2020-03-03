@@ -32,7 +32,7 @@
           </li>
         </ul>
         <ul class="header-menu-list">
-          <li class="header-menu-catalog">
+          <li class="header-menu-catalog header-menu-item">
             <a class="header-menu-catalog-link" href="#">Каталог товаров</a>
             <ul class="header-submenu">
               <li class="first-column">
@@ -67,13 +67,13 @@
               </li>
             </ul>
           </li>
-          <li class="header-menu-delivery">
+          <li class="header-menu-delivery header-menu-item">
             <a class="header-menu-delivery-link" href="#">Доставка</a>
           </li>
-          <li class="header-menu-warranty">
+          <li class="header-menu-warranty header-menu-item">
             <a class="header-menu-warranty-link" href="#">Гарантия</a>
           </li>
-          <li class="header-menu-contacts">
+          <li class="header-menu-contacts header-menu-item">
             <a class="header-menu-contacts-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -154,9 +154,9 @@
           </li>
           <li>
             <ul class="header-slider-controls-list">
-              <li><label for="product-1"></label></li>
-              <li><label for="product-2"></label></li>
-              <li><label for="product-3"></label></li>
+              <li><label for="product-1"></label><span class="visually-hidden">Селфи-палка</span></li>
+              <li><label for="product-2"></label><span class="visually-hidden">Фитнес-браслет</span></li>
+              <li><label for="product-3"></label><span class="visually-hidden">Квадрокоптер</span></li>
             </ul>
           </li>
         </ul>
@@ -218,7 +218,7 @@
       
       <section class="services gradient">
         <div class="services-wrap container">
-          <h2 class="visually-hidden">Сервисы, оказываемые интернет магазином</h2>
+          <h2 class="visually-hidden">Услуги, оказываемые интернет магазином</h2>
           <input class="services-slider visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
           <input class="services-slider visually-hidden" id="services-control-2" type="radio" name="services-control">
           <input class="services-slider visually-hidden" id="services-control-3" type="radio" name="services-control">
@@ -312,7 +312,7 @@
         </div>
         <div class="footer-second-line">
           <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-          <ul class="footer-services-list footer-services-link">
+          <ul class="footer-services-list">
             <li class="footer-services-item">
               <a href="#">Доставка</a>
             </li>
@@ -347,7 +347,7 @@
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="popup-form-field">
           <label class="popup-form-label" for="user-name">Ваше имя:</label>
-          <input class="popup-form-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+          <input class="popup-form-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
         </p>
         <p class="popup-form-field">
           <label class="popup-form-label" for="user-email">Ваш e-mail:</label>
