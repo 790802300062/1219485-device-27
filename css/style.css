@@ -30,6 +30,90 @@
        url("../fonts/opensanslight.woff") format("woff");
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px) translate(-50%, -50%);
+            transform: translateY(-2000px) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: translateY(30px) translate(-50%, -50%);
+            transform: translateY(30px) translate(-50%, -50%);
+  }
+  90% {
+    -webkit-transform: translateY(-10px) translate(-50%, -50%);
+            transform: translateY(-10px) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translate(-50%, -50%);
+            transform: translateY(0) translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px) translate(-50%, -50%);
+            transform: translateY(-2000px) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: translateY(30px) translate(-50%, -50%);
+            transform: translateY(30px) translate(-50%, -50%);
+  }
+  90% {
+    -webkit-transform: translateY(-10px) translate(-50%, -50%);
+            transform: translateY(-10px) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translate(-50%, -50%);
+            transform: translateY(0) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateX(0);
+            transform: translate(-50%, -50%) translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-50%, -50%) translateX(-10px);
+            transform: translate(-50%, -50%) translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-50%, -50%) translateX(10px);
+            transform: translate(-50%, -50%) translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateX(0);
+            transform: translate(-50%, -50%) translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-50%, -50%) translateX(-10px);
+            transform: translate(-50%, -50%) translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-50%, -50%) translateX(10px);
+            transform: translate(-50%, -50%) translateX(10px);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -1317,6 +1401,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.contacts-map {
+  cursor: pointer;
+}
+
 .about-btn {
   width: 260px;
 }
@@ -1665,10 +1753,15 @@ img {
   transform: translate(-50%, -50%);
 
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  z-index: 10;
 }
 
 .message {
   display: none;
+}
+
+.message-active {
+  display: block;
   width: 760px;
   min-height: 386px;
 
@@ -1678,6 +1771,13 @@ img {
   padding-bottom: 76px;
 
   background-color: white;
+}
+
+.message-error {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .popup-form {
@@ -1863,7 +1963,8 @@ img {
   cursor: pointer;
 }
 
-.btn-close {
+.about-btn-close,
+.map-btn-close {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -1879,7 +1980,8 @@ img {
   cursor: pointer;
 }
 
-.btn-close::before {
+.about-btn-close::before,
+.map-btn-close::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1892,7 +1994,8 @@ img {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.btn-close::after {
+.about-btn-close::after,
+.map-btn-close::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1905,18 +2008,35 @@ img {
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.btn-close:hover {
+.about-btn-close:hover,
+.map-btn-close:hover {
   opacity: 1;
 }
 
-.btn-close:active {
+.about-btn-close:active,
+.map-btn-close:active {
   opacity: 0.3;
 }
 
 .map {
   display: none;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+
+}
+
+.map-active {
+  display: block;
   width: 960px;
   height: 560px;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .link-user {
