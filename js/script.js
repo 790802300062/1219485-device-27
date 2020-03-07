@@ -10,13 +10,15 @@ var popupWriteLink = document.querySelector(".write-us"),
 
 popupWriteLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupWrite.classList.add(".message-active");
+  popupWrite.classList.add("message-active");
   userName.focus();
 })
 
 popupWriteForm.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value) {
     evt.preventDefault();
+    popupWrite.classList.remove("message-error");
+    popupWrite.offsetWidth = popupWrite.offsetWidth;
     popupWrite.classList.add("message-error");
   }
 })
