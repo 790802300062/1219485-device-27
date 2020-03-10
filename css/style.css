@@ -364,7 +364,7 @@ img {
 }
 
 .header-search-input:hover:-ms-input-placeholder {
-  font-size: 0px;
+  font-size: 15px;
 }
 
 .header-search-label::before {
@@ -501,15 +501,15 @@ img {
 }
 
 .header-user-list a{
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .header-user-list a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .header-user-list a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .header-menu-list {
@@ -551,11 +551,11 @@ img {
 }
 
 .header-menu-list a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .header-menu-list a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .header-menu-catalog-link {
@@ -583,11 +583,6 @@ img {
   opacity: 0.3;
 
   cursor: pointer;
-}
-
-.header-menu-catalog-link:hover::after,
-.header-menu-catalog-link:active::after {
-  opacity: 0.3;
 }
 
 .header-submenu {
@@ -1003,11 +998,6 @@ img {
   background-color: #e5e5e5;
   z-index: -1;
 }
-
-/*.gradient {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 26%, rgba(229, 229, 229) 26%, rgba(229, 229, 229) 100%);
-  z-index: 0;
-}*/
 
 .services-wrap {
   display: flex;
@@ -1632,22 +1622,22 @@ img {
 .footer-third-line {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer-academy-logo {
   position: relative;
 
-  width: 27px;
+  width: 28px;
   height: 35px;
+  margin-top: 35px;
 }
 
 .footer-academy-logo::before {
   content: "";
   position: absolute;
-  left: 482px;
-  top: 2px;
+  left: 0;
+  top: 0;
 
   width: 28px;
   height: 35px;
@@ -1672,7 +1662,7 @@ img {
   width: 142px;
   margin-top: 5px;
   padding-top: 30px;
-  margin-left: -12px;
+  margin-right: 483px;
 
   list-style: none;
 }
@@ -1744,7 +1734,6 @@ img {
   opacity: 0.1;
 }
 
-
 .popup {
   position: fixed;
   top: 50%;
@@ -1799,7 +1788,7 @@ img {
 }
 
 .popup-form-field:first-child {
-  padding-right: 40px;
+  margin-right: 35px;
 }
 
 .popup-form-label {
@@ -1815,8 +1804,9 @@ img {
 }
 
 .popup-form-input {
-  width: 360px;
+  width: 341px;
   height: 50px;
+  padding-left: 19px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1827,13 +1817,17 @@ img {
   background-color: rgba(230, 230, 230, 0.5);
   border: none;
 }
+.popup-form-input-message {
+  padding-left: 19px;
+  padding-top: 15px;
+}
 
 .popup-form-input:hover {
   background-color: rgba(230, 230, 230, 0.8);
 }
 
 .popup-form-input:focus {
-  width: 354px;
+  width: 335px;
   height: 44px;
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
@@ -1844,47 +1838,42 @@ img {
 }
 
 .message input::-webkit-input-placeholder {
-  padding-left: 20px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message input:-ms-input-placeholder {
-  padding-left: 20px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message input::-ms-input-placeholder {
-  padding-left: 20px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message input::placeholder {
-  padding-left: 20px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.popup-form-input::-moz-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message input:focus::-webkit-input-placeholder {
   width: 354px;
   height: 44px;
-  padding-left: 17px;
 }
 
 .message input:focus:-ms-input-placeholder {
   width: 354px;
   height: 44px;
-  padding-left: 17px;
 }
 
 .message input:focus::-ms-input-placeholder {
   width: 354px;
   height: 44px;
-  padding-left: 17px;
 }
 
 .message input:focus::placeholder {
-  width: 354px;
-  height: 44px;
-  padding-left: 17px;
+  font-size: 0px;
 }
 
 .popup-form p:nth-child(3) {
@@ -1892,7 +1881,7 @@ img {
 }
 
 .message textarea {
-  width: 760px;
+  width: 741px;
   height: 156px;
   
   font-size: 14px;
@@ -1908,53 +1897,52 @@ img {
 }
 
 .message textarea:focus {
-  width: 754px;
+  width: 735px;
   height: 150px;
+
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
 .message textarea::-webkit-input-placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message textarea:-ms-input-placeholder {
-  padding-left: 20px;
-  padding-top: 18px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message textarea::-ms-input-placeholder {
-  padding-left: 20px;
-  padding-top: 18px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message textarea::placeholder {
-  padding-left: 20px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.message textarea:-moz-placeholder {
   padding-top: 18px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message textarea:focus::-webkit-input-placeholder {
-  padding-left: 17px;
   padding-top: 15px;
 }
 
 .message textarea:focus:-ms-input-placeholder {
-  padding-left: 17px;
   padding-top: 15px;
 }
 
 .message textarea:focus::-ms-input-placeholder {
-  padding-left: 17px;
   padding-top: 15px;
 }
 
 .message textarea:focus::placeholder {
-  padding-left: 17px;
+  padding-top: 15px;
+  font-size: 0px;
+}
+
+.message textarea:focus::-moz-placeholder {
   padding-top: 15px;
 }
 
