@@ -673,6 +673,8 @@ img {
 
 
 .slider {
+  position: relative;
+
   min-height: 500px;
 }
 
@@ -836,7 +838,6 @@ img {
 }
 
 .slider-item-table-desc th {
-  
   text-align: left;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 300;
@@ -850,7 +851,7 @@ img {
 .header-slider-controls-list {
   position: absolute;
   right: 77px;
-  bottom: 157px;
+  bottom: 142px;
 
   display: flex;
   justify-content: space-between;
@@ -887,9 +888,9 @@ img {
   justify-content: space-between;
 }
 
-#product-1:checked ~ .slider-list label[for="product-1"],
-#product-2:checked ~ .slider-list label[for="product-2"],
-#product-3:checked ~ .slider-list label[for="product-3"] {
+#product-1:checked ~ .header-slider-controls-list label[for="product-1"],
+#product-2:checked ~ .header-slider-controls-list label[for="product-2"],
+#product-3:checked ~ .header-slider-controls-list label[for="product-3"] {
   background-image: url(../img/slider-button-active.svg);
 }
 
@@ -1052,7 +1053,6 @@ img {
   margin-bottom: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /*padding-left: 3px;*/
 
   font-weight: 800;
   font-size: 18px;
@@ -1064,6 +1064,10 @@ img {
   text-transform: uppercase;
   
   cursor: pointer;
+}
+
+.services-slider-controls-label:active {
+  color: #f7e184;
 }
 
 .services-slider-controls-label::before {
@@ -1086,6 +1090,20 @@ img {
   height: 40px;
 
   transition: all 0.3s linear;
+}
+
+.services-slider-controls-label:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+
+  width: 160px;
+  height: 40px;
+
+  background-color: #000000;
 }
 
 .services-slider-controls-label::after {
@@ -1840,6 +1858,7 @@ img {
 .popup-form-input:focus {
   width: 335px;
   height: 44px;
+
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
 }
@@ -1869,18 +1888,15 @@ img {
 }
 
 .message input:focus::-webkit-input-placeholder {
-  width: 354px;
-  height: 44px;
+  font-size: 0px;
 }
 
 .message input:focus:-ms-input-placeholder {
-  width: 354px;
-  height: 44px;
+  font-size: 0px;
 }
 
 .message input:focus::-ms-input-placeholder {
-  width: 354px;
-  height: 44px;
+  font-size: 0px;
 }
 
 .message input:focus::placeholder {
@@ -1910,6 +1926,7 @@ img {
 .message textarea:focus {
   width: 735px;
   height: 150px;
+  /*padding-left: 16px;*/
 
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
@@ -2296,6 +2313,7 @@ img {
 
 .filter-range-input {
   width: 70px;
+  height: 25px;
   margin: 0;
   padding: 0;
 
