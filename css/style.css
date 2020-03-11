@@ -247,7 +247,7 @@ img {
 
 .header-search {
   position: relative;
-  
+
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -356,15 +356,19 @@ img {
 }
 
 .header-search-input:focus::placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
 .header-search-input:focus::-webkit-input-placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
-.header-search-input:hover:-ms-input-placeholder {
-  font-size: 15px;
+.header-search-input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.header-search-input:focus::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .header-search-label::before {
@@ -563,7 +567,6 @@ img {
 
   margin: 0;
   padding: 0;
-
   padding-right: 28px;
   margin-right: 223px;
 }
@@ -671,7 +674,6 @@ img {
   opacity: 0.3;
 }
 
-
 .slider {
   position: relative;
 
@@ -765,6 +767,7 @@ img {
 
 .slider-item-promo {
   position: relative;
+
   margin: 0;
   margin-top: 2px;
   padding-top: 80px;
@@ -862,7 +865,7 @@ img {
 
 .header-slider-controls-list label {
   display: block;
-  
+
   width: 24px;
   height: 24px;
 
@@ -1025,19 +1028,17 @@ img {
 .services-slider-item {
   position: relative;
 
+  width: 460px;
   margin: 0;
   padding: 0;
-
-  width: 460px;
 }
 
 .services-slider-controls-list {
   position: relative;
-  
+
   width: 280px;
   margin: 0;
   padding:0;
-
   padding-top: 80px;
 
   list-style: none;
@@ -1062,7 +1063,7 @@ img {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  
+
   cursor: pointer;
 }
 
@@ -1122,9 +1123,8 @@ img {
 .service-item-title {
   padding-top: 29px;
   padding-left: 122px;
-
   margin-bottom: 31px;
-  
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -1136,7 +1136,6 @@ img {
 
 .service-item-desc {
   width: 460px;
-
   padding-left: 120px;
 
   font-family: "OpenSans", "Arial", sans-serif;
@@ -1207,7 +1206,6 @@ img {
   margin: 0;
 
   color: #f7e184;
-
   background-color: #000000;
 }
 
@@ -1220,7 +1218,6 @@ img {
   margin: 0;
 
   color: #f7e184;
-
   background-color: #000000;
 }
 
@@ -1233,7 +1230,6 @@ img {
   margin: 0;
 
   color: #f7e184;
-
   background-color: #000000;
 }
 
@@ -1272,6 +1268,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   width: 260px;
   height: 120px;
 }
@@ -1285,34 +1282,42 @@ img {
 
 .brands-link-dji {
   background-image: url("../img/dji.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-dji:hover {
   background-image: url("../img/dji-active.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-spgadgets {
   background-image: url("../img/spgadgets.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-spgadgets:hover {
   background-image: url("../img/spgadgets-active.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-gopro {
   background-image: url("../img/gopro.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-gopro:hover {
   background-image: url("../img/gopro-active.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-vive {
   background-image: url("../img/vive.jpg");
+  transition: all 0.3s linear;
 }
 
 .brands-link-vive:hover {
   background-image: url("../img/vive-active.jpg");
+  transition: all 0.3s linear;
 }
 
 .about-contacts {
@@ -1444,7 +1449,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
+
   padding-top: 45px;
   min-height: 323px;
 }
@@ -1483,7 +1488,7 @@ img {
   font-weight: 300;
   line-height: 2.4;
   letter-spacing: 0.15px;
-  
+
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1747,6 +1752,7 @@ img {
 
   width: 32px;
   height: 32px;
+
   background-image: url("../img/twitter.svg");
   opacity: 0.3;
 }
@@ -1779,7 +1785,7 @@ img {
 
 .message-active {
   display: block;
-  
+
   width: 760px;
   min-height: 386px;
 
@@ -1888,19 +1894,19 @@ img {
 }
 
 .message input:focus::-webkit-input-placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
 .message input:focus:-ms-input-placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
 .message input:focus::-ms-input-placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
 .message input:focus::placeholder {
-  font-size: 0px;
+  opacity: 0;
 }
 
 .popup-form p:nth-child(3) {
@@ -1926,7 +1932,6 @@ img {
 .message textarea:focus {
   width: 735px;
   height: 150px;
-  /*padding-left: 16px;*/
 
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
@@ -1950,28 +1955,32 @@ img {
 
 .message textarea:-moz-placeholder {
   padding-top: 18px;
+
   color: rgba(70, 70, 70, 0.4);
 }
 
 .message textarea:focus::-webkit-input-placeholder {
-  padding-top: 15px;
+  opacity: 0;
 }
 
 .message textarea:focus:-ms-input-placeholder {
-  padding-top: 15px;
+  opacity: 0;
 }
 
 .message textarea:focus::-ms-input-placeholder {
-  padding-top: 15px;
+  opacity: 0;
 }
 
 .message textarea:focus::placeholder {
   padding-top: 15px;
-  font-size: 0px;
+
+  opacity: 0;
 }
 
 .message textarea:focus::-moz-placeholder {
   padding-top: 15px;
+
+  opacity: 0;
 }
 
 .message-btn {
@@ -2184,6 +2193,7 @@ img {
 
 .catalog-main-wrapper {
   display: flex;
+
   width: 100%;
   margin: 0;
   padding: 0;
@@ -2201,13 +2211,12 @@ img {
 
 .filter-header {
   width: 100%;
-
-  text-align: right;
   margin: 0;
   padding-right: 180px;
   padding-top: 23px;
   padding-bottom: 23px;
-  
+
+  text-align: right;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -2281,7 +2290,7 @@ img {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px #dadada;
-  
+
   cursor: pointer;
 }
 
@@ -2754,7 +2763,6 @@ img {
 
 .catalog-btn {
   width: 200px;
-
   margin-top: 50px;
   margin-bottom: 33px;
 }
