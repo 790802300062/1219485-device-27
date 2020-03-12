@@ -876,24 +876,17 @@ img {
   cursor: pointer;
 }
 
-
-#product-1:checked ~ .slider-list #slide-1,
-#product-2:checked ~ .slider-list #slide-2,
-#product-3:checked ~ .slider-list #slide-3 {
-  display: block;
-}
-
-#product-1:checked ~ .slider-list #slide-1,
-#product-2:checked ~ .slider-list #slide-2,
-#product-3:checked ~ .slider-list #slide-3 {
+.product-1:checked ~ .slider-list .slide-1,
+.product-2:checked ~ .slider-list .slide-2,
+.product-3:checked ~ .slider-list .slide-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#product-1:checked ~ .header-slider-controls-list label[for="product-1"],
-#product-2:checked ~ .header-slider-controls-list label[for="product-2"],
-#product-3:checked ~ .header-slider-controls-list label[for="product-3"] {
+.product-1:checked ~ .header-slider-controls-list label[for="product-1"],
+.product-2:checked ~ .header-slider-controls-list label[for="product-2"],
+.product-3:checked ~ .header-slider-controls-list label[for="product-3"] {
   background-image: url(../img/slider-button-active.svg);
 }
 
@@ -1381,7 +1374,7 @@ img {
 }
 
 .about p:last-of-type {
-  width: 485px;
+  width: 475px;
 }
 
 .contacts-p {
