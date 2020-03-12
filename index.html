@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header container">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE></h1>
       <a class="header-logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
@@ -82,14 +81,14 @@
 
     <main>
       <h1 class="visually-hidden">Интернет магазин гаджетов</h1>
-      
+
       <section class="slider container">
         <h2 class="visually-hidden">Лучшие предложения</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
         <ul class="slider-list">
-          <li class="slider-item" id="slide-1">
+          <li class="slider-item slide-1" id="slide-1">
             <div class="promo-slider-left promo-slider-1">
               <img src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
             </div>
@@ -112,7 +111,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item" id="slide-2">
+          <li class="slider-item slide-2" id="slide-2">
             <div class="promo-slider-left promo-slider-2">
               <img src="img/slide-2.png" width="345" height="485" alt="Мотивирующие фитнес браслеты">
             </div>
@@ -131,7 +130,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item" id="slide-3">
+          <li class="slider-item slide-3" id="slide-3">
             <div class="promo-slider-left promo-slider-3">
               <img src="img/slide-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
             </div>
@@ -152,16 +151,14 @@
               </table>
             </div>
           </li>
-          <li>
-            <ul class="header-slider-controls-list">
-              <li><label for="product-1"></label><span class="visually-hidden">Селфи-палка</span></li>
-              <li><label for="product-2"></label><span class="visually-hidden">Фитнес-браслет</span></li>
-              <li><label for="product-3"></label><span class="visually-hidden">Квадрокоптер</span></li>
-            </ul>
-          </li>
+        </ul>
+        <ul class="header-slider-controls-list">
+          <li><label for="product-1"></label><span class="visually-hidden">Селфи-палка</span></li>
+          <li><label for="product-2"></label><span class="visually-hidden">Фитнес-браслет</span></li>
+          <li><label for="product-3"></label><span class="visually-hidden">Квадрокоптер</span></li>
         </ul>
       </section>
-      
+
       <section class="category container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
@@ -287,7 +284,7 @@
           <h2 class="about-title">Контакты</h2>
           <p class="contacts-p">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <img class="contacts-map" src="img/map.jpg" width="560" height="222" alt="ул.Строителей, 15">
-          <a class="about-btn btn write-us" href="#">Напишите нам</a>
+          <a class="about-btn btn write-us" href="message.html">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -367,6 +364,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112436988893!2d37.52821835204128!3d55.687032925863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522064816436" width="960" height="560" style="border:0" allowfullscreen></iframe>
       <button class="map-btn-close" type="button" aria-label="Кнопка закрытия окна"></button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
